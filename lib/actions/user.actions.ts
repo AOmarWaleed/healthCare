@@ -1,4 +1,6 @@
-//? "use server";
+//! RUN THIS FILE ON THE SERVER TO CAN ACCESS THE SERVER ENVIRONMENT AND DATABASE
+"use server";
+
 
 import { ID, Query } from "node-appwrite";
 import { users } from "../appwriter.config";

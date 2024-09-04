@@ -40,14 +40,14 @@ export default function PatientForm({
 
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log("start submit");
+
     try {
       const user = {
         name: values.name,
         email: values.email,
         phone: values.phone,
       };
-
-      console.log({ user, values });
 
       const res = await createUser(user);
       console.log(res);
